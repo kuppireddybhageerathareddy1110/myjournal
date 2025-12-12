@@ -1,0 +1,206 @@
+/* ---------------------------------
+   GLOBAL PAGE STYLING
+---------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* ---------------------------------
+   NAVBAR
+---------------------------------- */
+.navbar {
+  background: #1a1a1a;
+  padding: 12px 22px;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------
+   LOGIN + SIGNUP BOXES
+---------------------------------- */
+.center-box {
+  max-width: 380px;
+  margin: 100px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.input-field:focus {
+  border-color: #5a67d8;
+  box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.3);
+  outline: none;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #535bf2;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #454de0;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: #edf2f7;
+  border: 1px solid #cbd5e0;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+/* ---------------------------------
+   ENTRY CARDS (JOURNAL)
+---------------------------------- */
+.entry-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 12px 0;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-3px);
+}
+
+.entry-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.entry-card-content {
+  margin-top: 10px;
+  color: #4a5568;
+  line-height: 1.4;
+}
+
+/* ---------------------------------
+   MOOD TAGS
+---------------------------------- */
+.mood-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Default */
+.mood-tag {
+  background: #e2e8f0;
+  color: #333;
+}
+
+/* Colors per mood */
+.mood-happy {
+  background: #fde68a;
+  color: #b45309;
+}
+
+.mood-sad {
+  background: #bfdbfe;
+  color: #1e3a8a;
+}
+
+.mood-stressed {
+  background: #fecaca;
+  color: #991b1b;
+}
+
+.mood-neutral {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* ---------------------------------
+   MOOD BOARD CARD
+---------------------------------- */
+.board-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  margin: 12px;
+  max-width: 280px;
+}
+
+.board-card:hover {
+  transform: translateY(-4px);
+}
+
+.board-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.board-note {
+  font-size: 15px;
+  color: #4a5568;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* ---------------------------------
+   PAGE LAYOUT
+---------------------------------- */
+.page-container {
+  padding: 24px;
+  max-width: 800px;
+  margin: auto;
+}

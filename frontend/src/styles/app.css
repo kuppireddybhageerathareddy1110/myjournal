@@ -1,0 +1,686 @@
+/* ---------------------------------
+   LOGIN + SIGNUP BOXES
+---------------------------------- */
+.center-box {
+  width: 360px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+  margin: 120px auto;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+.input-field:focus {
+  border-color: #5a67d8;
+  box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.3);
+  outline: none;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #535bf2;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #454de0;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: #edf2f7;
+  border: 1px solid #cbd5e0;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+/* ---------------------------------
+   NAVBAR FINAL CLEAN DESIGN
+---------------------------------- */
+
+.navbar {
+  background: #ffffff;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* LEFT (Logo) */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* CENTER (Navigation Links) */
+.nav-center {
+  display: flex;
+  gap: 34px;         /* THIS FIXES SPACING */
+}
+
+.nav-center a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-center a:hover {
+  color: #535bf2;
+}
+
+/* RIGHT (Logout) */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
+
+/* ---------------------------------
+   ENTRY CARDS
+---------------------------------- */
+.entry-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 12px;
+  margin: 18px 0;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+}
+
+.entry-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0;
+}
+
+.entry-date {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.entry-preview {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* READ MORE BUTTON */
+.read-more-btn {
+  margin-top: 16px;
+  padding: 8px 14px;
+  background: #535bf2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.read-more-btn:hover {
+  background: #454de0;
+}
+
+/* ---------------------------------
+   MOOD TAGS
+---------------------------------- */
+.mood-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.mood-happy { background: #fde68a; color: #b45309; }
+.mood-sad { background: #bfdbfe; color: #1e3a8a; }
+.mood-stressed { background: #fecaca; color: #991b1b; }
+.mood-neutral { background: #e5e7eb; color: #374151; }
+
+/* ---------------------------------
+   DASHBOARD
+---------------------------------- */
+.page-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 25px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+
+.dashboard-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #1a202c;
+}
+
+.dashboard-card p {
+  color: #4a5568;
+  font-size: 14px;
+}
+
+/* Entry Editor Card */
+.editor-card {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  max-width: 750px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Title input */
+.editor-input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.editor-input:focus {
+  border-color: #535bf2;
+  box-shadow: 0px 0px 0 3px rgba(83, 91, 242, 0.25);
+}
+
+/* Textarea styling */
+.editor-textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e0;
+  font-size: 16px;
+  resize: vertical;
+  outline: none;
+  transition: 0.2s;
+}
+
+.editor-textarea:focus {
+  border-color: #535bf2;
+  box-shadow: 0px 0px 0 3px rgba(83, 91, 242, 0.25);
+}
+
+/* Save Button */
+.editor-save-btn {
+  width: 180px;
+  padding: 12px;
+  background: #535bf2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-end;
+  transition: 0.2s;
+}
+
+.editor-save-btn:hover {
+  background: #454de0;
+}
+/* Mood Board Controls */
+.mood-controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upload-btn {
+  background: #535bf2;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #454de0;
+}
+
+/* Mood Board Masonry Grid */
+/* Mood Board Grid */
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
+  padding-top: 20px;
+}
+
+/* Mood Item Container */
+.mood-item {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Image Fix — consistent aspect ratio */
+.mood-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Text Card */
+.mood-text {
+  padding: 22px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #1f2937;
+}
+
+/* Add Image Button */
+.upload-btn {
+  background: #6366F1;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #4F46E5;
+}
+
+/* PROFILE + MODAL STYLES - append to src/styles/app.css */
+
+/* Profile card */
+.page-container { padding: 30px; max-width: 1000px; margin: 0 auto; }
+.page-title { font-size: 28px; margin-bottom: 20px; }
+
+.profile-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 6px 22px rgba(16,24,40,0.06);
+}
+
+.avatar-circle {
+  width: 64px;
+  height: 64px;
+  background: #6366f1;
+  color: #fff;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  font-weight:700;
+}
+
+.profile-info { flex-grow:1; }
+.profile-info h3 { margin:0; font-size:18px; font-weight:700; }
+.profile-info p { margin:6px 0 0 0; color:#6b7280; }
+
+.profile-edit-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight:600;
+}
+
+/* Modal overlay + box */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index: 2000;
+}
+.modal-box {
+  width: 380px;
+  background: #fff;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(2,6,23,0.2);
+}
+.modal-box h3 { margin:0 0 16px 0; font-size:18px; }
+.modal-buttons { margin-top: 16px; display:flex; gap:12px; justify-content:flex-end; }
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.mood-item:hover .delete-btn {
+  opacity: 1;
+}
+.mood-item {
+  position: relative;
+}
+
+.profile-edit-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  z-index: 200;   /* <-- FIX: ensures button is clickable */
+  pointer-events: auto; /* <-- FIX  */
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;    /* <-- FIX */
+}
+.profile-card {
+  position: relative;
+  z-index: 100;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.entry-delete-btn {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.entry-delete-btn:hover {
+  background: #c53030;
+}
+
+/* Chart wrappers */
+.chart-wrapper { width: 100%; height: 100%; }
+
+/* small direct styles */
+.small-btn {
+  padding: 6px 10px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* layout: two charts side-by-side on wide screens */
+.analytics-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* ensure chart cards don't overflow */
+.chart-card { padding: 18px; }
+
+/* calendar */
+.calendar-grid { margin-top: 12px; }
+.weekday-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+.weeks { display: flex; flex-direction: column; gap: 8px; }
+
+/* each week row */
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+/* day cell */
+.day-cell {
+  min-height: 64px;
+  border-radius: 8px;
+  position: relative;
+  padding: 6px;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.04);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day-cell:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(2,6,23,0.08); }
+.day-number { font-size: 13px; font-weight: 700; color: #111827; }
+.day-avg { font-size: 12px; color: #111827; opacity: 0.85; margin-top: 6px; }
+
+/* month boxes (year-view) */
+.month-box { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; width: 86px; }
+.month-name { font-size: 13px; color: #374151; }
+.month-square {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  box-shadow: 0 4px 12px rgba(2,6,23,0.06);
+}
+
+/* ranking legend */
+.calendar-legend { display:flex; gap:8px; align-items:center; font-size:13px; color:#374151; }
+.legend-box { width:16px; height:16px; border-radius:3px; display:inline-block; margin: 0 6px; }
+
+/* responsive adjustments */
+@media (max-width: 920px) {
+  .analytics-row { grid-template-columns: 1fr; }
+  .month-box { width: 72px; }
+  .month-square { width: 56px; height: 56px; }
+}
+/* ---- Analytics Layout ---- */
+.analytics-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  flex: 1;
+  min-width: 320px;
+}
+
+/* ---- Calendar Heatmap ---- */
+.calendar-grid {
+  margin-top: 10px;
+}
+
+.weekday-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.week-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+}
+
+.day-cell {
+  height: 55px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.day-number {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.day-avg {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.legend-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+/* ---- Yearly heatmap ---- */
+.month-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month-name {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.month-square {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}

@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-dotenv
+pymongo 
+motor 
+google-generativeai 
+python-jose 
+passlib 
+bcrypt
+guvicorn
+dnspython
+pydantic[email]
+fastapi-security
+httpx
+python-multipart
+aiofiles
+Pillow
