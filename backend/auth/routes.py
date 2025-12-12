@@ -5,7 +5,8 @@ from utils.jwt_handler import create_token, verify_token
 from passlib.context import CryptContext
 
 router = APIRouter()
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
+
 
 # SIGNUP
 @router.post("/signup")

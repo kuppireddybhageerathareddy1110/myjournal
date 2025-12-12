@@ -5,8 +5,7 @@ pymongo
 motor 
 google-generativeai 
 python-jose 
-passlib 
-bcrypt
+passlib[argon2]
 uvicorn
 dnspython
 pydantic[email]
