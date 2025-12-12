@@ -10,6 +10,7 @@ import MoodBoard from "./pages/MoodBoard";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import ViewEntry from "./pages/ViewEntry";
+import MoodAnalytics from "./pages/MoodAnalytics";
 import "./index.css";
 import "./styles/app.css";
 
@@ -20,10 +21,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/signup" element={<Signup />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/journal" element={<Journal />} />
-      
-
+       <Route path="/analytics" element={<MoodAnalytics />} />
       <Route path="/editor" element={<EntryEditor />} />
-      <Route path="/entry/:entry_id" element={<ViewEntry />} /> 
+      <Route path="/entry/:entry_id" element={<ViewEntry />} />
       <Route path="/moodboard" element={<MoodBoard />} />
       <Route path="/profile" element={<Profile />} />
     </Routes>
