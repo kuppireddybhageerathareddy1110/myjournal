@@ -7,7 +7,7 @@ google-generativeai
 python-jose 
 passlib 
 bcrypt
-guvicorn
+uvicorn
 dnspython
 pydantic[email]
 fastapi-security
