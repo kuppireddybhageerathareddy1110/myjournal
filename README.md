@@ -3,8 +3,8 @@
 
 # **Aesthetica Journal – AI-Powered Personal Mood Journal**
 
-Live Frontend: **[https://myjournal-nine.vercel.app/](https://myjournal-nine.vercel.app/)**
-Backend API: **[https://myjournal-pslq.vercel.app/](https://myjournal-pslq.vercel.app/)**
+Live Frontend: **[https://myjournal-pslq.vercel.app/](https://myjournal-pslq.vercel.app/)**
+Backend API: **[https://myjournal-pnlm.onrender.com](https://myjournal-pnlm.onrender.com)**
 
 Aesthetica Journal is an AI-enhanced journaling web application that helps users record entries, visualize mood trends, create personal mood boards, and analyze emotional patterns using AI mood detection powered by Google Gemini.
 
