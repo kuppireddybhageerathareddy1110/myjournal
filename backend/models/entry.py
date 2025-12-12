@@ -1,15 +1,14 @@
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Optional
 from datetime import datetime
 
 class Entry(BaseModel):
     title: str
     content: str
-    mood: str = "unknown"
+    mood: Optional[str] = "unknown"
     tags: List[str] = Field(default_factory=list)
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    date: datetime = Field(default_factory=datetime.utcnow)
-
+    created_at: Optional[datetime] = None
+    date: Optional[datetime] = None
 
 class UpdateEntry(BaseModel):
     title: str | None = None

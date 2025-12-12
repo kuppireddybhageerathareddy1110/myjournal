@@ -10,8 +10,8 @@ function token() {
 export const getEntries = () =>
   axios.get(API, { headers: { auth: token() } });
 
-export const createEntry = (data) =>
-  axios.post(API, data, { headers: { auth: token() } });
+export const createEntry = (data, userToken = token()) =>
+  axios.post(API, data, { headers: { auth: userToken } });
 
 export function getEntryById(id) {
   return axios.get(`${API}/${id}`, {
