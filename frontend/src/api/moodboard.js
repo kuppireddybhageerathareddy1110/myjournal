@@ -1,6 +1,7 @@
 import axios from "axios";
+import { API_BASE } from "./config";
 
-const API = "http://localhost:8000/board";
+const API = `${API_BASE}/board`;
 
 export function getBoardItems(token) {
   return axios.get(API + "/", {
